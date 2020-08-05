@@ -5,7 +5,10 @@ function convert(){
         return 0;
     binary.split('').map((char) => {
         if (char !== '0' && char !== '1' ){
-            return error("Please enter valid binary number");
+            document.getElementById("b-input").value = '';
+            document.getElementById('d-output').value = '';
+            alert("Please enter valid binary number");
+            return false;
         }
     });
 
