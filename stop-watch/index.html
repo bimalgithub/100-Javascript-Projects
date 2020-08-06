@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Stop Watch</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h2>Stop Watch</h2>
+        <div class="watch">
+            <div class="display">
+                <input type="number" id="hour" value=0>
+                <input type="number" id="minute" value=0>
+                <input type="number" id="second" value=0>
+            </div>
+            <div class="control">
+                <button class="btn btn-primary" id="start" onclick="startWatch()">Start</button>
+                <button class="btn btn-info" id="pause" onclick="pauseWatch()">Pause</button>
+                <button class="btn btn-danger" id="reset" onclick="resetWatch()">Reset</button>
+            </div>
+    </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
